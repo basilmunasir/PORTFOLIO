@@ -47,10 +47,10 @@ nav img
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    height: 70vh;
     text-align: center;
     background-color: #f5f5f5;
-    padding: 0 20px;
+    padding: 70px 20px;
 }
 .home-content h1
 {
@@ -73,6 +73,66 @@ nav img
     margin: 0 auto;
     line-height: 1.6;
 }
+#education
+{
+    margin-top: 60px;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+#education h2
+{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 36px;
+    color: #004080;
+    margin-bottom: 40px;
+}
+.edu-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.edu-item
+{
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    min-height: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.edu-header
+{
+    background-color: #004080;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.edu-body
+{
+    background-color: #a0a6fc;
+    padding: 20px;
+    color: #333;
+    height: 200px;
+}
+.edu-body .edu-title
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.edu-body .edu-school
+{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.edu-body .edu-year
+{
+    font-size: 16px;
+    color: #555;
+}
 
 
 @media (max-width: 768px) 
@@ -91,6 +151,11 @@ nav img
         width: 40px;
         height: 40px;
     }
+    #home
+    {
+        height: auto;
+        padding: 70px 20px;
+    }
     .home-content h1
     {
         font-size: 32px;
@@ -105,5 +170,10 @@ nav img
         font-size: 16px;
         max-width: 90%;
         line-height: 1.5;
+    }
+    .edu-container
+    {
+        flex-direction: column;
+        align-items: center;
     }
 }
